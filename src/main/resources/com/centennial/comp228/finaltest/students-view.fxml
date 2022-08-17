@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      spacing="20"
+      fx:controller="com.centennial.comp228.finaltest.StudentsController">
+
+    <HBox prefHeight="10"/>
+
+    <HBox alignment="CENTER">
+        <Label text="Student"
+               prefWidth="310"
+               textAlignment="CENTER"
+               textFill="#3700ff">
+            <font>
+                <Font name="Arial"
+                      size="18.0"/>
+            </font>
+        </Label>
+    </HBox>
+
+    <HBox prefWidth="Infinity"
+          maxWidth="Infinity"
+          spacing="10"
+          alignment="CENTER">
+
+        <Label text="Student's Id no:"
+               prefWidth="140"/>
+
+        <TextField fx:id="studentId"
+                   prefWidth="160"/>
+    </HBox>
+
+    <HBox prefWidth="Infinity"
+          maxWidth="Infinity"
+          spacing="10"
+          alignment="CENTER">
+
+        <Label text="Student's Name:"
+               prefWidth="140"/>
+
+        <TextField fx:id="studentName"
+                   prefWidth="160"/>
+    </HBox>
+
+    <HBox prefWidth="Infinity"
+          maxWidth="Infinity"
+          spacing="10"
+          alignment="CENTER">
+
+        <Label text="Student's Tuition Fees:"
+               prefWidth="140"/>
+
+        <TextField fx:id="studentTuitionFeeds"
+                   prefWidth="160"/>
+    </HBox>
+
+    <HBox prefWidth="Infinity"
+          maxWidth="Infinity"
+          spacing="10"
+          alignment="CENTER">
+
+        <Label
+                text="Student's Discount Fees:"
+                prefWidth="140"/>
+
+        <TextField
+                fx:id="studentDiscountFees"
+                disable="true"
+                prefWidth="160"/>
+    </HBox>
+
+    <HBox
+            prefWidth="Infinity"
+            maxWidth="Infinity"
+            spacing="10"
+            alignment="CENTER">
+
+        <Button
+                mnemonicParsing="false"
+                prefHeight="26.0"
+                prefWidth="310"
+                onAction="#onDisplayButtonClick"
+                text="Display Records"/>
+    </HBox>
+
+    <HBox
+            prefWidth="Infinity"
+            maxWidth="Infinity"
+            spacing="10"
+            alignment="CENTER">
+
+        <Button
+                mnemonicParsing="false"
+                text="Reset"
+                prefWidth="150"
+                prefHeight="26.0"
+                onAction="#onResetButtonClick"/>
+
+        <Button
+                mnemonicParsing="false"
+                text="Delete"
+                prefWidth="150"
+                prefHeight="26.0"
+                onAction="#onDeleteButtonClick"/>
+    </HBox>
+
+    <HBox
+            prefWidth="Infinity"
+            maxWidth="Infinity"
+            spacing="10"
+            alignment="CENTER">
+
+        <Button
+                mnemonicParsing="false"
+                text="Update"
+                prefWidth="150"
+                prefHeight="26.0"
+                onAction="#onUpdateButtonClick"/>
+
+        <Button
+                mnemonicParsing="false"
+                text="Quit"
+                prefWidth="150"
+                prefHeight="26.0"
+                onAction="#onQuietButtonClick"/>
+    </HBox>
+
+    <HBox
+            prefWidth="Infinity"
+            maxWidth="Infinity"
+            alignment="CENTER">
+
+        <Label
+                fx:id="studentIdError"
+                visible="false"
+                textFill="#ff0000"/>
+    </HBox>
+</VBox>
